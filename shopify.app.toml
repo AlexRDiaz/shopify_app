@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "easyshop"
+client_id = "9ca203d7f7ae981cbeb1969837fc4df0"
+application_url = "https://favorites-dts-recommendation-michelle.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://favorites-dts-recommendation-michelle.trycloudflare.com/auth/callback",
+  "https://favorites-dts-recommendation-michelle.trycloudflare.com/auth/shopify/callback",
+  "https://favorites-dts-recommendation-michelle.trycloudflare.com/api/auth/callback",
+  "https://favorites-dts-recommendation-michelle.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-3ff52034.myshopify.com"
